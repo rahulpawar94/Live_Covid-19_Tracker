@@ -1,5 +1,15 @@
 .App {
   text-align: center;
-  overflow-x: hidden;
   margin: 0 auto;
+}
+
+.liveupdateimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.wrapper{
+  overflow-x: hidden;
 }
