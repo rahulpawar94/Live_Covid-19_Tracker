@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi');
 .App {
   text-align: center;
   margin: 0 auto;
@@ -5,11 +6,45 @@
 
 .liveupdateimg{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   margin-top: 10px;
+  border-radius: 5px;
 }
 
 .wrapper{
   overflow-x: hidden;
+  margin: 10px;
+}
+h1{
+  font-family: 'Gugi', cursive;
+  text-align: center;
+  color: yellowgreen;
+  display: none;
+}
+
+Fab{
+text-emphasis: none;
+}
+
+.fabIcon {
+  background-color: #24292e !important;
+  color: white !important;
+  margin-top: 20px !important;
+}
+
+.MuiFab-root{
+  text-transform:unset !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center ! ;
+}
+
+@media only screen and (max-width: 767px) {
+  .liveupdateimg{
+    display: none;
+  }
+  h1{
+    display: block;
+  }
 }
