@@ -7,6 +7,8 @@ import Columns from 'react-columns';
 import Form from 'react-bootstrap/Form';
 import './App.css';
 import logo from './COVID-19-LIVE_UPDATES.png';
+import { Fab } from '@material-ui/core';
+import { GitHub as GitHub } from '@material-ui/icons';
 
 function App() {
   const [latest, setLatest] = useState([]);
@@ -87,7 +89,21 @@ function App() {
   return (
     <div className="wrapper">
 
-      <img src={logo} alt="corona" className="liveupdateimg"/>
+      <img src={logo} alt="corona" className="liveupdateimg" />
+
+      <h1>COVID-19 coverage</h1>
+      <h1>LIVE UPDATES</h1>
+      <Fab
+        variant="extended"
+        size="small"
+        color='inherit'
+        aria-label="add"
+        className="fabIcon"
+        href='https://github.com/rahulpawar94'
+      >
+        <GitHub /> 
+           Developer@Rahul Pawar
+        </Fab>
 
       <CardDeck>
         <Card bg="primary"
