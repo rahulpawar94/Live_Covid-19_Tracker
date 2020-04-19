@@ -3,10 +3,10 @@ import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
-import Cardcolumns from 'react-bootstrap/CardColumns';
 import Columns from 'react-columns';
 import Form from 'react-bootstrap/Form';
 import './App.css';
+import logo from './COVID-19-LIVE_UPDATES.png';
 
 function App() {
   const [latest, setLatest] = useState([]);
@@ -85,7 +85,10 @@ function App() {
 
 
   return (
-    <div>
+    <div className="wrapper">
+
+      <img src={logo} alt="corona" className="liveupdateimg"/>
+
       <CardDeck>
         <Card bg="primary"
           text={"white"}
