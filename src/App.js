@@ -44,7 +44,7 @@ function App() {
   const lastUpdated = date.toString();
 
   const filterCountry = results.filter(item => {
-    return searchCountry !== "" ? item.country.incldes(searchCountry) : item;
+    return searchCountry !== "" ? item.country.includes(searchCountry) : item;
   });
 
 
